@@ -6,11 +6,15 @@ import "./Navbar.css";
 import TextJson from "../TextJson/TextJson.json";
 import bannerLaptop from "../../Assets/1.png"
 import bannerMobile from "../../Assets/bannerMobile.png"
+import { useRestaurantData } from '../../data/restaurantData';
+
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const location = useLocation();
+    const { restaurantData, loading, error } = useRestaurantData();
 
+    
     const navigate = useNavigate();
 
     const handleAnchorClick = (anchor) => {
@@ -47,6 +51,11 @@ function Navbar() {
 
     const isPanierPage = location.pathname === '/panier';
 
+    if (loading) return <div>Chargement...</div>;
+  
+    // Gérer les erreurs
+    if (error) return <div>Erreur de chargement des données</div>;
+
     return (
         <div className="containerGlobalNavbar" id="home" style={{ height: isPanierPage ? '130px' : '100vh' }}>
             {!isPanierPage && <div className="shadowNavbar"></div>}
@@ -55,7 +64,7 @@ function Navbar() {
             )}
             
             <div className="containerTitle">
-                {!isPanierPage && <h1>{formatText(TextJson.restaurantName)}</h1>}
+                {!isPanierPage && <h1>{restaurantData.name}</h1>}
                 {!isPanierPage && <div className="mouse-container">
                     <div className="mouse">
                         <div className="scroll-wheel"></div>

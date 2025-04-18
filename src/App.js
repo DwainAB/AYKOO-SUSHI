@@ -2,8 +2,8 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
-import Navbar from './Components/Navbar/Navbar';
-import Footer from "./Components/Footer/Footer";
+import LegalNotices from "./Pages/LegalNotices/LegalNotices";
+
 
 
 function App() {
@@ -11,12 +11,11 @@ function App() {
     <div className="App">
       <Router>
         <div className="container-global">
-          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/legalNotices" element={<LegalNotices />} />
           </Routes>
         </div>
-        <Footer />
       </Router>
     </div>
   );

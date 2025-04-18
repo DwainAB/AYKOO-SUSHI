@@ -1,35 +1,10 @@
 {
     "refRestaurant": "5b5d7d39-6d6f-465b-8386-72ce4b39ab96", 
-    "restaurantName": "Aykoo Sushi",
     "nav1": "Accueil",
     "nav2": "Menu",
     "nav3": "Lieu",
     "nav4": "Panier",
-    "openingHours": [
-      { "day": 1, "start": 11, "end": 15, "_comment": "Lundi matin" },
-      { "day": 1, "start": 18, "end": 22.5, "_comment": "Lundi soir" },
-  
-      { "day": 2, "start": 11, "end": 15, "_comment": "Mardi matin" },
-      { "day": 2, "start": 18, "end": 22.5, "_comment": "Mardi soir" },
-  
-      { "day": 3, "start": 11, "end": 15, "_comment": "Mercredi matin" },
-      { "day": 3, "start": 18, "end": 22.5, "_comment": "Mercredi soir" },
-  
-      { "day": 4, "start": 11, "end": 15, "_comment": "Jeudi matin" },
-      { "day": 4, "start": 18, "end": 22.5, "_comment": "Jeudi soir" },
-  
-      { "day": 5, "start": 11, "end": 15, "_comment": "Vendredi matin" },
-      { "day": 5, "start": 18, "end": 22.5, "_comment": "Vendredi soir" },
-  
-      { "day": 6, "start": 11, "end": 15, "_comment": "Samedi matin" },
-      { "day": 6, "start": 18, "end": 22.5, "_comment": "Samedi soir" }
-    ],
-
-    "deliveryOptions": {
-      "delivery": false,
-      "pickup": true
-    },
-
+    
     "showMenuImages": false,  
 
     "titleSection1" : "Notre restaurant",
@@ -38,20 +13,6 @@
 
     "quoteSection2": "Le sushi est la quintessence de l'art\n culinaire japonais, une fusion subtile\n de saveurs, de techniques et de\n traditions millénaires.",
     "authorSection2" : "Nobu Matsuhisa",
-    "workAuthorSection2" : "Chef sushi renommé",
-
-    "mondayTime": "12:00 - 14:30 / 19:00 - 22:30",
-    "tuesdayTime": "Fermé",
-    "wednesdayTime": "12:00 - 14:30 / 19:00 - 22:30",
-    "thursdayTime": "12:00 - 14:30 / 19:00 - 22:30",
-    "fridayTime": "12:00 - 14:30 / 19:00 - 22:30",
-    "saturdayTime": "12:00 - 14:30 / 19:00 - 22:30",
-    "sundayTime": "12:00 - 14:30 / 19:00 - 22:30",
-
-    "phoneRestaurant": "01 23 45 67 89",
-    "mailRestaurant": "contact@yumeats.fr",
-    "adresseRestaurant": "Av. Gustave Eiffel, 75007 Paris "
-  
-
+    "workAuthorSection2" : "Chef sushi renommé"
   }
   

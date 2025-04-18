@@ -1,0 +1,61 @@
+.mentions-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mentions-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .mentions-section {
+    margin-bottom: 30px;
+  }
+  
+  .mentions-section h2 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+  
+  .mentions-section p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  .mentions-section a {
+    color: #2980b9;
+    text-decoration: none;
+  }
+  
+  .mentions-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .home-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #2980b9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .home-button:hover {
+    background-color: #3498db;
+  }
+  

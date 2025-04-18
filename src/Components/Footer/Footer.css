@@ -62,6 +62,15 @@
     width: 100%;
 }
 
+.footerTrademark{
+    margin: 0;
+    color: black!important;
+}
+
+.legalNoticeButton{
+    color: black!important;
+}
+
 @media (max-width: 1024px) {
     .containerContentFooter {
         flex-direction: column;

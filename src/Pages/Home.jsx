@@ -4,7 +4,8 @@ import Quote from "../Components/Quote/Quote";
 import InfoRestaurant from "../Components/InfoRestaurant/InfoRestaurant";
 import Menu from "../Components/Menu/Menu";
 import DeliveryLinks from "../Components/DeliveryLinks/DeliveryLinks";
-import textJson from "../Components/TextJson/TextJson.json"
+import Navbar from "../Components/Navbar/Navbar";
+import Footer from "../Components/Footer/Footer"
 import { RestaurantProvider } from "../data/restaurantData";
 
 function Home(){
@@ -12,11 +13,13 @@ function Home(){
     return(
         <div>
             <RestaurantProvider>
-                <DeliveryLinks show={textJson.deliveryOptions.delivery}/>
+                <Navbar/>
+                <DeliveryLinks/>
                 <History/>
                 {/* <Quote/> */}
                 <Menu itemMin={6} itemMax={10} menuHome={true} />
                 <InfoRestaurant/>
+                <Footer/>
             </RestaurantProvider>
         </div>
     )

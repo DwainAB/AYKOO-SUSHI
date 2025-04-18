@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Menu.css';
 import { fetchRestaurantData } from '../utils/api';
 import textJson from "../TextJson/TextJson.json";
+import { useRestaurantData } from '../../data/restaurantData';
 
 function Menu({itemMin, itemMax, menuHome}) {
   const [filter, setFilter] = useState('all');
@@ -12,6 +13,8 @@ function Menu({itemMin, itemMax, menuHome}) {
   const [cartUpdated, setCartUpdated] = useState(false);
   const nameRestaurant = textJson.refRestaurant;
   const showImages = textJson.showMenuImages || false; // Nouvelle propriété pour gérer l'affichage des images
+  const { restaurantData, loading, error } = useRestaurantData();
+
 
   useEffect(() => {
     const fetchFoodsAndCategories = async () => {
@@ -34,6 +37,10 @@ function Menu({itemMin, itemMax, menuHome}) {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  if (loading) return <div className="containerGlobalInfoRestaurant">Chargement des informations...</div>;
+  
+  if (error) return <div className="containerGlobalInfoRestaurant">Erreur: Impossible de charger les informations</div>;
 
   function getItemsPerPage() {
     return window.innerWidth <= 1062 ? itemMin : itemMax;
@@ -148,9 +155,9 @@ function Menu({itemMin, itemMax, menuHome}) {
 
       </div>
       <div className="btnplateforme">
-          <button>
+          <a href={`https://platforms.yumco.fr/${restaurantData.id}`}>
             Commander
-          </button>
+          </a>
         </div>
     </div>
   );

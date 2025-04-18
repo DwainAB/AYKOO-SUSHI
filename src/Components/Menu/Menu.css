@@ -211,7 +211,7 @@
   margin-top: 50px;
 }
 
-.btnplateforme button{
+.btnplateforme a{
   background-color: var(--secondary-color);
   color: #fff;
   padding: 10px 20px;
